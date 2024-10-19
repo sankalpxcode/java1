@@ -1,0 +1,16 @@
+public class Test {
+    public String getClassname() {
+        String className = this.getClass().getSimpleName();
+        System.out.println("Name of the class running at runtime = " + className);
+        return className;
+    }
+
+    public static void main(String args[]) {
+        Test t = new Test();
+        t.getClassname();
+    }
+}
+Output
+CopyD:\SE3_25_java>javac Test.java
+D:\SE3_25_java>java Test
+Name of the class running at runtime = Test
