@@ -1,0 +1,27 @@
+interface B {
+    void welcome(int a);
+}
+
+class A {
+    public void welcome() {
+        System.out.println("Welcome A");
+    }
+}
+
+class CI extends A implements B {
+    @Override
+    public void welcome(int a) {
+        System.out.println("Welcome B = " + a);
+    }
+
+    public static void main(String[] args) {
+        CI c1 = new CI();
+        c1.welcome();
+        c1.welcome(10);
+    }
+}
+
+Output
+CopyD:\SE3_25_java>java CI
+Welcome A
+Welcome B = 10
