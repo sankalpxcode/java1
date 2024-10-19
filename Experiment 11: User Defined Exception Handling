@@ -1,0 +1,35 @@
+class NegativeAgeException extends Exception {
+    public NegativeAgeException(String message) {
+        super(message);
+    }
+}
+
+public class ExceptionHandling {
+    public static void main(String[] args) {
+        java.util.Scanner scanner = new java.util.Scanner(System.in);
+        System.out.println("Enter Your Age");
+        try {
+            int age = scanner.nextInt();
+            if (age < 0) {
+                throw new NegativeAgeException("Age can not be negative");
+            }
+            System.out.println("Your age is: " + age);
+        } catch (NegativeAgeException e) {
+            System.out.println(e.getMessage());
+        } finally {
+            scanner.close();
+        }
+    }
+}
+
+Output
+CopyD:\SE3_25_java>javac ExceptionHandling.java
+D:\SE3_25_java>java ExceptionHandling
+Enter Your Age
+-19
+Age can not be negative
+
+D:\SE3_25_java>java ExceptionHandling
+Enter Your Age
+19
+Your age is: 19
