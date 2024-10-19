@@ -1,0 +1,43 @@
+import java.util.Vector;
+
+class StringStorage {
+    public static void main(String args[]) {
+        String s1 = "Nice";
+        String s2 = new String("to");
+        StringBuffer s3 = new StringBuffer("Meet");
+        StringBuilder s4 = new StringBuilder("you");
+        s4 = s4.append("all");
+        
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
+        System.out.println(s4);
+    }
+}
+
+class VectorExample {
+    public static void main(String[] args) {
+        Vector<Integer> v = new Vector<>(3, 2);
+        v.addElement(1);
+        v.addElement(2);
+        v.addElement(3);
+        v.insertElementAt(4, 1);
+        v.removeElementAt(2);
+        
+        for (int i : v) {
+            System.out.println(i);
+        }
+    }
+}
+
+Output
+CopyD:\SE3_25_java>java StringStorage
+Nice
+to
+Meet
+youall
+
+D:\SE3_25_java>java VectorExample
+1
+4
+3
