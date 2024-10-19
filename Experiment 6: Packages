@@ -1,0 +1,23 @@
+// File: MyClass.java
+package myPackage;
+
+public class MyClass {
+    public void getName(String args) {
+        System.out.println(args);
+    }
+}
+
+// File: PrintName.java
+import myPackage.MyClass;
+
+public class PrintName {
+    public static void main(String args[]) {
+        String name = "Hello";
+        MyClass obj = new MyClass();
+        obj.getName(name);
+    }
+}
+
+Output
+CopyD:\SE3_25_java>java PrintName
+Hello
