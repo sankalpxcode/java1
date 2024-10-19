@@ -1,0 +1,22 @@
+class Demo {
+    public Demo() {
+        String msg = "SE3 Students";
+        System.out.println("The String is : " + msg);
+    }
+
+    public Demo(int i, int j) {
+        int k = i + j;
+        System.out.println("The sum of the Numbers is :" + k);
+    }
+
+    public static void main(String args[]) {
+        Demo d1 = new Demo();
+        Demo d2 = new Demo(30, 40);
+    }
+}
+
+Output
+CopyD:\SE3_25_java>javac Demo.java
+D:\SE3_25_java>java Demo
+The String is : SE3 Students
+The sum of the Numbers is : 70
