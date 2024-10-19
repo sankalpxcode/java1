@@ -1,0 +1,18 @@
+class HelloWorld {
+    public static void main(String args[]) {
+        System.out.println("No. of arguments: " + args.length);
+        for (int i = 0; i < args.length; i++) {
+            System.out.println("Argument " + (i + 1) + ": " + args[i]);
+        }
+    }
+}
+
+
+}
+Output
+CopyD:\SE3_25_java>javac HelloWorld.java
+D:\SE3_25_java>java HelloWorld Swayam Dilesh Raut
+No. of arguments: 3
+Argument 1: Swayam
+Argument 2: Dilesh
+Argument 3: Raut
