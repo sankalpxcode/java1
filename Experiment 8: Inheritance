@@ -1,0 +1,29 @@
+class A {
+    protected int num = 20;
+    void welcome() {
+        System.out.println("welcome A");
+    }
+}
+
+class C extends A {
+    void welcome(int a) {
+        System.out.println("welcome to C:" + a);
+    }
+}
+
+class B extends C {
+    public static void main(String args[]) {
+        B b1 = new B();
+        b1.welcome();
+        b1.welcome(10);
+        System.out.println("Number:" + b1.num);
+    }
+}
+
+
+Output
+CopyD:\SE3_25>javac B.java
+D:\SE3_25>java B
+welcome A
+welcome to C:10
+Number:20
